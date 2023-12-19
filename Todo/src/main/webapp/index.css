@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+header{
+	position : relative;
+	width : 1000px;
+	margin: 0 auto;
+	display :flex;
+	justify-content: space-between;
+	align-items : center;
+}
+
+.new_todo_btn{
+	background-color: #20ADEE;
+	width: 200px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+a{
+	text-decoration: none;
+	color : white;
+}
+
+
+.lists {
+	position : relative;
+	width : 1000px;
+	margin : 0 auto;
+	display: flex;
+	justify-content : space-between;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+.title {
+	background-color: #345461;
+	width: 325px;
+	line-height : 65px;
+	height: 65px;
+	text-align: center;
+}
+
+.component {
+	position :  relative;
+	background-color: #CEE5EF;
+	width : 325px;
+	height: 85px;
+	box-sizing : border-box;
+	margin-top: 10px;
+	padding : 14px;
+}
+
+.component > h3 {
+	margin: 0px;
+}
+
+.component > span {
+	display: inline-block;
+	margin-top : 10px;
+}
+
+.component > button {
+	position : absolute;
+	
+}
