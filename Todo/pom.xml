@@ -17,6 +17,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
+    <!-- web.xml 파일을 삭제해도 eclipse에서 오류가 발생하지 않는다. -->
+	<failOnMissingWebXml>false</failOnMissingWebXml>
   </properties>
 
   <dependencies>
@@ -40,6 +42,19 @@
        <artifactId>mysql-connector-java</artifactId>
        <version>5.1.45</version>
  </dependency>
+ <!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
+<dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>jstl</artifactId>
+    <version>1.2</version>
+</dependency>
+ <!-- https://mvnrepository.com/artifact/org.apache.taglibs/taglibs-standard-impl -->
+<dependency>
+    <groupId>org.apache.taglibs</groupId>
+    <artifactId>taglibs-standard-impl</artifactId>
+    <version>1.2.5</version>
+    <scope>runtime</scope>
+</dependency>
   </dependencies>
 
   <build>
