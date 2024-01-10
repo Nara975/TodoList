@@ -24,6 +24,7 @@ public class TodoDto {
 		this.regDate = regDate;
 	}
 	
+	//새로운 할일 저장 시 필요한 생성자 
 	public TodoDto(String title, String name, int sequence) {
 		super(); 
 		this.name = name;
