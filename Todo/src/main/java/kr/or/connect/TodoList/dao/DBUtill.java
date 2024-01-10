@@ -4,12 +4,13 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Connection;
 
 
 
 public class DBUtill {
-	public static java.sql.Connection getConnection() {
-		java.sql.Connection conn = null;
+	public static Connection getConnection() {
+		Connection conn = null;
 		String driver = "com.mysql.jdbc.driver";
 		String url = "jdbc:mysql://localhost/todolist";
 		String user = "todolistuser";
@@ -25,7 +26,7 @@ public class DBUtill {
 		return conn;
 	}
 	
-	public static void close(java.sql.Connection conn, PreparedStatement ps) {
+	public static void close(Connection conn, PreparedStatement ps) {
 		if(ps != null) {
 			try {
 				ps.close();
@@ -43,7 +44,7 @@ public class DBUtill {
 		}
 	}
 	
-	public static void close(java.sql.Connection conn, PreparedStatement ps, ResultSet rs) {
+	public static void close(Connection conn, PreparedStatement ps, ResultSet rs) {
 		if(rs != null) {
 			try {
 				rs.close();
