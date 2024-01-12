@@ -15,8 +15,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
     <!-- web.xml 파일을 삭제해도 eclipse에서 오류가 발생하지 않는다. -->
 	<failOnMissingWebXml>false</failOnMissingWebXml>
   </properties>
@@ -37,11 +37,12 @@
         <scope>provided</scope> <!-- 서블릿 라이브러리를 컴파일 시에만 사용. 배포시에는 사용되지 않음 -->
     </dependency>
     <!-- jdbc 드라이버 설치 (의존성 추가) -->
-    <dependency>   
-  <groupId>mysql</groupId>   
-       <artifactId>mysql-connector-java</artifactId>
-       <version>5.1.45</version>
- </dependency>
+<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.33</version>
+</dependency>
  <!-- https://mvnrepository.com/artifact/javax.servlet/jstl -->
 <dependency>
     <groupId>javax.servlet</groupId>
