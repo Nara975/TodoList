@@ -11,8 +11,8 @@ import java.sql.Connection;
 public class DBUtill {
 	public static Connection getConnection() {
 		Connection conn = null;
-		String driver = "com.mysql.jdbc.driver";
-		String url = "jdbc:mysql://localhost/todolist";
+		String driver = "com.mysql.jdbc.Driver";
+		String url = "jdbc:mysql://localhost:3306/todolist";
 		String user = "todolistuser";
 		String password = "todo123!@#";
 		
