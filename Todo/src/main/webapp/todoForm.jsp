@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Todo-Form</title>
-<link rel="stylesheet" href="todoForm.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/todoForm.css">
 </head>
 <body>
 	<h1>할일 등록</h1>

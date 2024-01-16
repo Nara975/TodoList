@@ -12,12 +12,12 @@
 <head>
 <meta charset="UTF-8">
 <title>TODO</title>
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/cssServlet">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/index.css">
 </head>
 <body>
 	<header>
 		<h1 class="work_todo">나의 해야할 일들</h1>
-		<div class="new_todo_btn"><a href="http://localhost:3306/todoForm">새로운 TODO 등록</a></div>
+		<div class="new_todo_btn"><a href="${pageContext.request.contextPath}/todoForm">새로운 TODO 등록</a></div>
 	</header>
 	 <div class="lists">
     <ul class="todo_list">
