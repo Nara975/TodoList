@@ -61,10 +61,9 @@ ul {
 
 .component > span {
 	display: inline-block;
-	margin-top : 10px;
 }
 
 .component > button {
-	position : absolute;
-	
+	position : relative;
+	left: 10px;
 }
