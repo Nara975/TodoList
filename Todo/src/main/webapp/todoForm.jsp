@@ -10,7 +10,7 @@
 <body>
 	<h1>할일 등록</h1>
 	<div class="form_container">
-	<form action="http://localhost:8080/todoFormSerlvet" accept-charset="UTF-8"
+	<form action="http://localhost:8080/todoAddSerlvet" accept-charset="UTF-8"
 	name = "todo_form" method="POST">
 		<label for="todoWhat">어떤 일인가요?</label>
 		<input type="text" id="todoWhat" name="todoWhat">
@@ -30,7 +30,7 @@
 			<label for="3rd">3순위 </label>
 		</div>
 		<div class="button_container">
-			<div class = "back_btn"><a href="http://localhost:8080/todo">이전</a></div>
+			<div class = "back_btn"><a href="http://localhost:8080/Todo">이전</a></div>
 			<button type="submit">제출</button>
 			<button type="reset">내용 지우기</button>
 		</div>
