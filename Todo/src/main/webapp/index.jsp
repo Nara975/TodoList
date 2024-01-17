@@ -17,7 +17,7 @@
 <body>
 	<header>
 		<h1 class="work_todo">나의 해야할 일들</h1>
-		<div class="new_todo_btn"><a href="http://localhost:8080/Todo/TodoFormServlet">새로운 TODO 등록</a></div>
+		<div class="new_todo_btn"><a href="${pageContext.request.contextPath}/form">새로운 TODO 등록</a></div>
 	</header>
 	 <div class="lists">
     <ul class="todo_list">
