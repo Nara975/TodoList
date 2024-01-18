@@ -10,27 +10,28 @@
 <body>
 	<h1>할일 등록</h1>
 	<div class="form_container">
-	<form action="http://localhost:8080/todoAddSerlvet" accept-charset="UTF-8"
+	<form action="${pageContext.request.contextPath}/TodoAddServlet" 
 	name = "todo_form" method="POST">
-		<label for="todoWhat">어떤 일인가요?</label>
-		<input type="text" id="todoWhat" name="todoWhat">
+		<label for="title">어떤 일인가요?</label>
+		<input type="text" id="title" name="title">
 		
-		<label for="todoWhat">누가 할일인가요?</label>
-		<input type="text" id="todoWho" name="todoWho">
+		<label for="name">누가 할일인가요?</label>
+		<input type="text" id="name" name="name">
 		
 		<label>우선순위를 선택하세요</label>
 		<div class="priority_container">
-			<input type="radio" id="1st" name="priority" value="1st">
+			<input type="radio" id="1st" name="sequence" value="1">
 			<label for="1st">1순위 </label>
 			
-			<input type="radio" id="2nd" name="priority" value="2nd">
+			<input type="radio" id="2nd" name="sequence" value="2">
 			<label for="2nd">2순위 </label>
 			
-			<input type="radio" id="3rd" name="priority" value="3rd">
+			<input type="radio" id="3rd" name="sequence" value="3">
 			<label for="3rd">3순위 </label>
 		</div>
 		<div class="button_container">
-			<div class = "back_btn"><a href="http://localhost:8080/Todo">이전</a></div>
+			<div class = "back_btn"><a href="${pageContext.request.contextPath}/main">이전</a></div>
+			<input type="submit" value="제출">
 			<button type="submit">제출</button>
 			<button type="reset">내용 지우기</button>
 		</div>
