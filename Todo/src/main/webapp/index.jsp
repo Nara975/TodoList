@@ -26,7 +26,7 @@
     		<c:if test="${todo.getType() eq 'TODO'}">
        			<li class="todo component">
 					<h3>${todo.getTitle()}</h3>
-					<span>${todo.getRegDate() }, 우선순위 ${todo.getSequence()}</span>
+					<span>${todo.getName()}, ${todo.getRegDate() }, 우선순위 ${todo.getSequence()}</span>
 					<button class="change_button">→</button>
         		</li>
     		</c:if>
@@ -34,18 +34,18 @@
     </ul>
     <ul class="doing_list">
     	<li class = "doing_title title"><h2>DOING</h2></li>
-        <li class="doing component">
+<!--         <li class="doing component">
 			<h3>자바스크립트 공부하기</h3>
 			<span>등록날짜:2023.11.27, 우선순위1</span>
 			<button class="change_button">→</button>
-        </li>
+        </li> -->
     </ul>
     <ul class="done_list">
     	<li class = "done_title title"><h2>DONE</h2></li>
-        <li class="done component">
+<!--         <li class="done component">
             <h3>자바스크립트 공부하기</h3>
 			<span>등록날짜:2023.11.27, 우선순위1</span>
-        </li>
+        </li> -->
     </ul>
     </div>
 </body>
